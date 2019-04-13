@@ -1,0 +1,166 @@
+
+html, body{
+  box-sizing: border-box;
+  
+}
+
+
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+  background: white;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: Red;
+  padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #970404;
+}
+.navbar-brand{
+  border: 1px solid black;
+  padding: 10px;
+  color: red
+}
+.navbar-toggler{
+  color: black;
+}
+
+.home-inner{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../Images/fancycrave-151127-unsplash.jpg');
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .7rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block!important;
+}
+/*============= ABOUT SECTION =============*/
+
+.narrow {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.narrow h1{
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  #fixed {
+    background-image: url('img/fixed/apple-mobile.png');
+  }
+  #fixed-2 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  footer {
+    background: url('img/footer/footer-mobile.png') no-repeat;
+  }
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+}
